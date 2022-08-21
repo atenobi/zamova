@@ -11,22 +11,26 @@ const imgArr = [
 
 let counter = 0;
 
-const changeImg = (e) => {
-  if (counter < imgArr.length) {
-    e.target.style.backgroundImage = imgArr[counter];
-    e.target.style.backgroundAttachment = "fixed";
-    e.target.style.backgroundRepeat = "no-repeat";
-    e.target.style.backgroundSize = "contain";
-    e.target.style.backgroundPositionX = "50%";
-    counter += 1;
-  } else {
-    e.target.style.backgroundImage = imgArr[0];
-    e.target.style.backgroundAttachment = "fixed";
-    e.target.style.backgroundRepeat = "no-repeat";
-    e.target.style.backgroundSize = "contain";
-    e.target.style.backgroundPositionX = "50%";
-    counter = 0;
-  }
+const changeImg = () => {
+  setInterval(()=> {
+    if (counter < imgArr.length) {
+      imageEl.style.backgroundImage = imgArr[counter];
+      
+      imageEl.style.backgroundRepeat = "no-repeat";
+      imageEl.style.backgroundSize = "contain";
+      imageEl.style.backgroundPositionX = "50%";
+      counter += 1;
+    } else {
+      imageEl.style.backgroundImage = imgArr[0];
+     
+      imageEl.style.backgroundRepeat = "no-repeat";
+      imageEl.style.backgroundSize = "contain";
+      imageEl.style.backgroundPositionX = "50%";
+      counter = 0;
+    }
+
+  }, 5000)
+ 
 };
 
-imageEl.addEventListener("click", changeImg);
+window.addEventListener("load", changeImg());
