@@ -1,12 +1,11 @@
 const imageEl = document.getElementById("js-dinamic-image");
 
 const imgArr = [
-  `url('./images/masha_dress.jpg')`,
-  `url('./images/haed_beast.jpg')`,
-  `url('./images/blured_mask.jpg')`,
-  `url('./images/head_on_sun.jpg')`,
-  `url('./images/holly.jpg')`,
-  `url('./images/unblured_mask.jpg')`,
+  `url('./images/masha_dress.png')`,
+  `url('./images/haed_beast.png')`,
+  `url('./images/blured_mask.png')`,
+  `url('./images/head_on_sun.png')`,
+  `url('./images/holly.png')`,
 ];
 
 let counter = 0;
