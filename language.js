@@ -1,11 +1,13 @@
 const switchLangButton = document.getElementById("switch_lg_btn");
-const outputHeader = document.getElementById("header-text");
-const outputContent = document.getElementById("content-text");
-const outputTitleEl = document.getElementById("content__title");
-const outputWordsEl = document.getElementById("content__words");
+const outputHeader = document.getElementById("js-header-text");
+const outputContent = document.getElementById("js-content-text");
+const outputTitleEl = document.getElementById("js-content-title");
+const outputWordsEl = document.getElementById("js-content-words");
+const outputSongsTitle = document.getElementById("js-songs-title");
+const outputFogTxt = document.getElementById("js-songs-fog");
 
-const textOnPage = {
-  by: {
+const textOnPage = [
+  {
     key: "BY",
     headerTxt:
       '"Замо́ва" — старажытны жанр народнай паэзіі, слоўная формула, якой надавалася магічнае значэньне.',
@@ -57,9 +59,22 @@ const textOnPage = {
     прадзедаў, пра іхняе жыццё-быццё, іхнія думкі і мары,
     клопат і дбанне? Ну не пра ўсіх, хто жыў даўным-даўно, дык
     хоць бы пра свой род, сваіх продкаў?..`,
-    titleTxt: 'Tэкст выкарыстаны у спектаклі',
+    titleTxt: "Tэкст выкарыстаны у спектаклі",
+    songsTxt: `Песні`,
+    behindFog: `За туманам Нічаго не відна...
+     Толькі відна Дуба зелянога.
+    Пад тым дубам Крыніца стаяла.
+     З той крыніцы Дзеўка ваду брала.
+     Абараніла Залатое калечка.
+     "А хто ж тое Калечка дастане,
+    Той са мною На рушнічак стане." (возьме ў жены)
+    Адазваўся Хлопец маладзенькі:
+    "А я ж тваё Калечка дастану,
+    Я ж з табою На рушнічак стану!"
+    "Лепей буду Палын горкі есці, 
+    Чым з табою За столікам сесці!"`,
   },
-  pl: {
+  {
     key: "PL",
     headerTxt:
       '"Zamova" to starożytny gatunek poezji ludowej, formuła słowna, której nadano magiczne znaczenie.',
@@ -109,9 +124,22 @@ const textOnPage = {
     pradziadkowie, o swoim życiu, swoich myślach i marzeniach,
     troska i troska? Cóż, nie o wszystkich, którzy żyli dawno temu
     przynajmniej o twojej rodzinie, twoich przodkach?`,
-    titleTxt: 'Tekst użyty w sztuce',
+    titleTxt: "Tekst użyty w sztuce",
+    songsTxt: `Piosenki`,
+    behindFog: ` Za mgłą Nie widzę nic...
+     Tylko widoczne Zielony dąb.
+    Pod tym dębem Strumień płynął.
+     Z tego strumienia Dziewczyna wzięła wodę.
+     Upuszczony Złoty pierścionek.
+     "A kto to jest? Pierścień dostanie
+    Ten ze mną Stanie się ręcznikiem. (poślubić) 
+    odpowiedział Młody chłopak:
+    "Jestem twój dostanę pierścionek
+    jestem z tobą Stanę na ręczniku!"
+    "Wolałbym Piołun jest zjadany
+    A ty Usiądź przy stole!”`,
   },
-  en: {
+  {
     key: "EN",
     headerTxt:
       '"Zamova" is an ancient genre of folk poetry, a verbal formula that was given a magical meaning.',
@@ -161,29 +189,44 @@ const textOnPage = {
     care and concern? Well, not about everyone who lived a long time ago, then
     at least about your family, your ancestors?...`,
     titleTxt: "Text used in the play",
+    songsTxt: `Piosenki`,
+    behindFog: `Behind the fog Everithing is hidden...
+     only green oak is visible.
+    a stream flows under this oak.
+     From this steam the girl take water.
+     she drop on the steam her golden ring.
+     "And who can find this ring,
+    that person stand with me
+     on a towel. (merry me)"
+    Yang men answered:
+    "I will find your ring. I will stand with you on a towel!"
+    "It's better to eat bitter sagebrush, 
+    than sit with you at the table!"`,
   },
+];
+
+let count = 0;
+
+const changeTextFunc = (num) => {
+  outputHeader.textContent = textOnPage[num].headerTxt;
+  outputContent.textContent = textOnPage[num].contentTxt;
+  outputTitleEl.textContent = textOnPage[num].titleTxt;
+  outputWordsEl.textContent = textOnPage[num].wordsTxt;
+  outputSongsTitle.textContent = textOnPage[num].songsTxt;
+  outputFogTxt.textContent = textOnPage[num].behindFog;
 };
 
 const switchLang = (e) => {
   e.stopPropagation();
-  if (e.target.textContent === "BY") {
-    e.target.textContent = textOnPage.pl.key;
-    outputHeader.textContent = textOnPage.pl.headerTxt;
-    outputContent.textContent = textOnPage.pl.contentTxt;
-    outputTitleEl.textContent = textOnPage.pl.titleTxt;
-    outputWordsEl.textContent = textOnPage.pl.wordsTxt;
-  } else if (e.target.textContent === "PL") {
-    e.target.textContent = textOnPage.en.key;
-    outputHeader.textContent = textOnPage.en.headerTxt;
-    outputContent.textContent = textOnPage.en.contentTxt;
-    outputTitleEl.textContent = textOnPage.en.titleTxt;
-    outputWordsEl.textContent = textOnPage.en.wordsTxt;
-  } else if (e.target.textContent === "EN") {
-    e.target.textContent = textOnPage.by.key;
-    outputHeader.textContent = textOnPage.by.headerTxt;
-    outputContent.textContent = textOnPage.by.contentTxt;
-    outputTitleEl.textContent = textOnPage.en.titleTxt;
-    outputWordsEl.textContent = textOnPage.by.wordsTxt;
+
+  if (count < textOnPage.length - 1) {
+    count += 1;
+    e.target.textContent = textOnPage[count].key;
+    changeTextFunc(count);
+  } else {
+    count = 0;
+    e.target.textContent = textOnPage[count].key;
+    changeTextFunc(count);
   }
 };
 
