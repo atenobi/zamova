@@ -3,8 +3,15 @@ const outputHeader = document.getElementById("js-header-text");
 const outputContent = document.getElementById("js-content-text");
 const outputTitleEl = document.getElementById("js-content-title");
 const outputWordsEl = document.getElementById("js-content-words");
+const outputWordsFinalEl = document.getElementById("js-content-words-final");
 const outputSongsTitle = document.getElementById("js-songs-title");
 const outputFogTxt = document.getElementById("js-songs-fog");
+const outputPineTxt = document.getElementById("js-songs-pine");
+const outputCherryTxt = document.getElementById("js-songs-cherry");
+const outputRiverTxt = document.getElementById("js-songs-river");
+const outputRoseTxt = document.getElementById("js-songs-rose");
+const outputFirePineTxt = document.getElementById("js-songs-fire-pine");
+const outputMooseTxt = document.getElementById("js-songs-moose");
 
 const textOnPage = [
   {
@@ -35,7 +42,8 @@ const textOnPage = [
     амшэлыя, – думаю пра гэта. I разгадку спрабую шукаць у тых песнях, казках, легендах,
     прыказках і прымаўках, што пакінулі продкі і якія чуў я ў
     маленстве, на якіх выхоўваўся, рос, як кажуць у нас, на лес
-    гледзячы... 
+    гледзячы...`,
+    finalTxt: `
     Узыходзіць сонца і заходзіць... Святло – цемра, дзень –
     ноч... I зноў: святло – цемра, дзень – ноч... Прылятаюць з
     выраю птушкі і адлятаюць у вырай... Зелянеюць дрэвы,
@@ -73,6 +81,70 @@ const textOnPage = [
     Я ж з табою На рушнічак стану!"
     "Лепей буду Палын горкі есці, 
     Чым з табою За столікам сесці!"`,
+    pine: `Зашумела сасоначка Над усходам сонца.
+    Заплакала дзяўчынанька, Гледзячы ў аконца.
+    "А мая ж ты, матуленька! Чаму не будзіла,
+    Як першая кампанячка У войска вырушыла?"
+    "А мая ж ты, дачушанька! Таму не будзіла,
+    Што твой мілы ўпярод пайшоў, Каб ты не тужыла"
+    "А мая ж ты, матуленька! Не тужу, не плачу,
+    Толькі выйду на вулачку - Сцежачкі не бачу!"
+    "А мая ж ты матуленька! Купі ты мне шоўку-
+    Буду шыць і вышываці Міламу кашульку."
+    Шыла-шыла, вышывала-Не хваціла шоўку.
+    Любілася - кахалася, Да не знала толку.`,
+    cherry: `Зялёная вішня З-пад кораня выйшла.
+    Аддала ж  мяне маці Дзе я непрывычна.
+    Як выйду на гору Ды  крыкну дадому:
+    "Вары, маці, вячэру Шчэ і на маю долю!"
+    "Ты думаеш, мама. Што я тут не плачу -
+    За горкімі слязамі Я свету не бачу.
+    Ты думаеш, мама, Што я тут раюю-
+    Прыдзі, падзівіся, Як я тут гарую.
+    Успамяні ж мяне, мама, Хоць раз у суботу,
+    Як я успамінаю, Ідучы на работу.
+    Успамяні ж мяне, мама, Хоць раз у нядзелю,
+    Як я успамінаю Сцелючы пасцелю.
+    Успамяні ж мяне, мама, Хоць раз у аўторак,
+    Як я успамінаю на дзень Разоў сорак."`,
+    river: `...`,
+    rose: ` А ў садзе ружа, Мілы мой Божа -
+    Несчасна мая Доль.
+    Не порадзіны, Не колядзіны -
+    Не родныя Мамкі. 
+    Пасылала б я Чорну галачку
+    На той свет Па мамку.
+    Сакаліначку На Украіначку
+    На сваю Радзімку.
+    Саколік ляціць Не далётае
+    Мамачка даўно Ждзёць.
+    "Ой, рада б я ўстаць,
+    Мае дзіцяці - Парадак Павесці.
+    Бо сыра зямля На грудзі лягла -
+    Не магу я Устаці.
+    Сасновы дошкі Сціснулі ножкі -
+    Не магу пайсці, Ісці."`,
+    firePine: `Агу, вясна! Агу, красна!
+    А што ж ты нам прынесла?
+    Весначуха-балбатуха, 
+    Воран крача- Сыра хоча! Сыра хоча,
+    Дзеўка плача - Замуж хоча!
+    Не крач, воран - Накрачэшся!
+    Не плач, дзеўка - Наплачэшся!
+    Воран крача-Сыра з'еўшы,
+    Дзеўка плача Сына меўшы.
+    Гарэла сосна, Палала.
+    Пад ёю дзеўка Стаяла.
+    Рускую косу Часала.
+    "Ой, косы-косы Вы ж мае!
+    Мала служылі Вы ў мяне!
+    Ой, больш служыць Не будзеце!
+    Пад белы вялён (вэлюм) Пойдзеце!"`,
+    moose: ` Ой злавілі Ды сівогога лося У гаросе.
+    Як і пачула Яно старая ласіца У лузе.
+    Як і кінула Крутыя рогі Пад ногі.
+    "Няхай мае Крутыя рогі Прападуць!
+    Куды ж майго Сівога лася Павядуць?"`,
   },
   {
     key: "PL",
@@ -101,7 +173,10 @@ const textOnPage = [
     omszały, - myślę o tym. Staram się znaleźć rozwiązanie w tych piosenkach, bajkach, legendach,
     przysłowia i powiedzenia, które moi przodkowie odeszli i które słyszałem w
     dzieciństwo, w którym się wychował, wyrosło, jak mówią w naszym kraju, na lesie
-    oglądanie... 
+    oglądanie...Kogo to obchodzi, on jest właścicielem...
+    Świat nie jest pozbawiony dobrych ludzi...
+    I będziemy żyć i będziemy bawić się, a śmierć nadejdzie - umrzemy.`,
+    finalTxt: `
     Słońce wschodzi i zachodzi... Światło - ciemność, dzień -
     noc... I znowu: światło - ciemność, dzień - noc... Lecą z
     ptaki odlatują i odlatują... drzewa zielenieją,
@@ -138,6 +213,70 @@ const textOnPage = [
     jestem z tobą Stanę na ręczniku!"
     "Wolałbym Piołun jest zjadany
     A ty Usiądź przy stole!”`,
+    pine: `Sosna wydała dźwięk Nad wschodem słońca.
+    Dziewczyna płakała Patrząc przez okno.
+    „A ty jesteś moja, mamo! Dla czego się nie obudziłeś
+    Jako pierwsza Grupa ludzi Czy wstąpiłeś do armii?
+    "A ty jesteś moja, mała dziewczynko! Dla tego się nie obudziłem
+    Że twoja ukochana odeszła Abyś nie tęsknił"
+    „A ty jesteś moja, mamo! Nie tęsknię, nie płaczę
+    Po prostu wyjdę na ulicę - Nie widzę ścieżki!”
+    „A ty jesteś moją matką! kup mi jedwab-
+    Uszyję i wyszyję Urocza koszula."
+    Szyte, szyte, haftowane - Zabrakło jedwabiu.
+    Kochany - kochany Nie wiedziałem, o co chodzi.`,
+    cherry: `Spod korzenia wyszła zielona wiśnia.
+    Moja mama dała mi miejsce, do którego nie jestem przyzwyczajony.
+    Gdy wejdę na górę, krzyknę do domu:
+    "Gotuj, mamo, obiad dla mnie też!"
+    "Myślisz, mamo. Że tu nie płaczę -
+    Za gorzkimi łzami nie widzę świata.
+    Czy myślisz, mamo, co tutaj polecam-
+    Chodź, zobacz jak tu płonę.
+    Zapamiętaj mnie mamo, przynajmniej raz w sobotę,
+    Jak pamiętam do pracy.
+    Zapamiętaj mnie mamo, przynajmniej raz w niedzielę,
+    Jak pamiętam leżałem w łóżku.
+    Zapamiętaj mnie mamo, chociaż raz we wtorek,
+    Jak pamiętam w dniu czterdziestu czasów”.`,
+    river: `...`,
+    rose: `A w ogrodzie jest róża, mój drogi Boże -
+    Mój los jest niefortunny.
+    Nie rodziny, nie Boże Narodzenie -
+    Nie rodzima mama.
+    Wysłałbym czarny znacznik wyboru
+    Na tamten świat, mamo.
+    Sakolinachku na Ukrainiechku
+    Do mojej ojczyzny.
+    Sokół leci, nie lata
+    Mamusia czekała bardzo długo.
+    "Och, chciałbym móc wstać,
+    Moje dzieci - Rozkaz przyniesienia.
+    Ponieważ mokra ziemia leżała na piersi -
+    Nie mogę wstać.
+    Deski sosnowe Ściśnięte nogi -
+    Nie mogę iść, Idź."`,
+    firePine: `Ach, wiosna! Och, jest czerwony!
+    A co nam przyniosłeś?
+    Sprężynowiec gadułą,
+    Wrona rechocze - Ser chce! ser chce
+    Dziewczyna płacze - chce wyjść za mąż!
+    Nie przestawaj, wrona - przestaniesz!
+    Nie płacz dziewczyno - będziesz płakać!
+    Kruk kruk, po zjedzeniu sera,
+    Dziewczynka płacze z synem.
+    Sosna płonęła, Palala.
+    Pod nią stała dziewczyna.
+    Rosyjski warkocz Chasali.
+    „Och, warkocze, warkocze, jesteś mój!
+    Trochę mi służyłeś!
+    Och, już nie będziesz służyć!
+    Pod białą zasłoną (welon) Idź!"`,
+    moose: `Och, złapali szarego łosia w lesie.
+    Jak stara łasica usłyszała to na łące.
+    Gdy rzuciła strome rogi pod jej stopy.
+    „Niech moje fajne rogi znikną!
+    Dokąd zabiorą mojego szarego łosia?`,
   },
   {
     key: "EN",
@@ -166,7 +305,10 @@ const textOnPage = [
     mossy, - I think about it. And I try to find the solution in those songs, fairy tales, legends,
     proverbs and sayings that my ancestors left and that I heard in
     childhood, in which he was brought up, grew, as they say in our country, on a forest
-    watching... The sun rises and sets... Light - darkness, day -
+    watching... Who cares, he owns...
+    The world is not without good people...
+    And we will live, and we will play, and death will come - we will die.`,
+    finalTxt: `The sun rises and sets... Light - darkness, day -
     night... And again: light - darkness, day - night... They fly from
     the birds fly away and fly away... the trees turn green,
     the bushes also turn yellow, drop their leaves, and remain as if
@@ -202,6 +344,70 @@ const textOnPage = [
     "I will find your ring. I will stand with you on a towel!"
     "It's better to eat bitter sagebrush, 
     than sit with you at the table!"`,
+    pine: `The pine tree made a noiseAbove the sunrise.
+    The girl cried Looking out the window.
+    "And you are mine, mother! Why didn't you wake up
+    As the first company Did you join the army?"
+    "And you are mine, little girl! That's why I didn't wake up
+    That your sweetheart has gone So that you don't miss"
+    "And you are mine, mother! I don't miss, I don't cry
+    I'll just go out into the street - I can't see the path!"
+    "And you are my mother! buy me silk-
+    I will sew and embroider Sweet shirt."
+    Sewed, sewed, embroidered-There was not enough silk.
+    Loved - loved I didn't know the point.`,
+    cherry: `A green cherry came out from under the root.
+    My mother gave me where I am not used to.
+    As I climb the mountain, I will shout home:
+    "Cook, mother, dinner for me too!"
+    "You think, mom. That I'm not crying here -
+    Behind the bitter tears I do not see the world.
+    Do you think, mom, What am I recommending here-
+    Come, see how I burn here.
+    Remember me, mother, At least once on Saturday,
+    As I remember, going to work.
+    Remember me, mom, At least once on Sunday,
+    As I remember, I was lying in bed.
+    Remember me, mom, even once on Tuesday,
+    As I remember on the day of the Forty Times."`,
+    river: `...`,
+    rose: `And there is a rose in the garden, my dear God -
+    My fate is unfortunate.
+    Not families, not Christmas -
+    Not native Mom.
+    I would send a black check mark
+    To the other world, Mom.
+    Sakolinachku On Ukrainachku
+    To my homeland.
+    The falcon flies. It does not fly
+    Mommy has been waiting for a long time.
+    "Oh, I wish I could get up,
+    My children - The order to bring.
+    Because the wet earth lay on the chest -
+    I can not get up.
+    Pine boards Squeezed the legs -
+    I can't go, Go."`,
+    firePine: `Ah, spring! Oh, it's red!
+    And what did you bring us?
+    Spring-eared chatterbox,
+    Crow croaks - Cheese wants! cheese wants
+    The girl is crying - She wants to get married!
+    Don't stop, crow - you will stop!
+    Don't cry, girl - You'll cry!
+    The raven raven, having eaten the cheese,
+    A girl is crying with her son.
+    The pine was burning, Palala.
+    A girl was standing under her.
+    Chasala's Russian braid.
+    "Oh, braids, braids, you are mine!
+    You served me a little!
+    Oh, you won't serve anymore!
+    Under the white veil (veil) Go!"`,
+    moose: `Oh, they caught a gray moose in the forest.
+    As the old weasel heard it in the meadow.
+    As she threw the steep horns Under her feet.
+    "Let my Cool Horns Be Vanished!
+    Where will they take my gray elk?"`,
   },
 ];
 
@@ -212,8 +418,15 @@ const changeTextFunc = (num) => {
   outputContent.textContent = textOnPage[num].contentTxt;
   outputTitleEl.textContent = textOnPage[num].titleTxt;
   outputWordsEl.textContent = textOnPage[num].wordsTxt;
+  outputWordsFinalEl.textContent = textOnPage[num].finalTxt;
   outputSongsTitle.textContent = textOnPage[num].songsTxt;
   outputFogTxt.textContent = textOnPage[num].behindFog;
+  outputPineTxt.textContent = textOnPage[num].pine;
+  outputCherryTxt.textContent = textOnPage[num].cherry;
+  outputRiverTxt.textContent = textOnPage[num].river;
+  outputRoseTxt.textContent = textOnPage[num].rose;
+  outputFirePineTxt.textContent = textOnPage[num].firePine;
+  outputMooseTxt.textContent = textOnPage[num].moose;
 };
 
 const switchLang = (e) => {
