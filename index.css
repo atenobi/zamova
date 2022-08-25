@@ -26,7 +26,6 @@
   animation: titleAnimation 3s linear;
 }
 
-
 @keyframes titleAnimation {
   from {
     transform: translateX(-100px);
@@ -103,6 +102,11 @@
   width: 90%;
   height: 420px;
   margin: 0 auto 0;
+}
+
+.songs-separator {
+  width: 50%;
+  margin: 0 auto;
 }
 
 /* ___ Footer ___ */
