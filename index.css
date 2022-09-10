@@ -73,6 +73,30 @@
   box-shadow: 0px 0px 10px white;
 }
 
+.size-button {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  transition: 500ms;
+}
+
+.size-button:hover {
+  background-color: black;
+  box-shadow: 0 0 15px white;
+}
+
+.size-button--icon {
+  width: 40px;
+  height: 40px;
+  fill: black;
+  border-radius: 5px;
+}
+
+.size-button--icon:hover {
+  fill: white;
+}
+
 /* ___ Content ___ */
 .content-container {
   background-color: rgb(78, 78, 78);
@@ -94,6 +118,7 @@
   margin: 0 auto 0;
   padding: 40px 70px 20px;
   font-size: 20px;
+  line-height: 30px;
   color: white;
   text-align: center;
 }
@@ -150,6 +175,15 @@
 
 .social-media-icon:hover {
   box-shadow: 0px 0px 10px white;
+}
+
+.big-text {
+  font-size: 40px;
+  line-height: 45px;
+  padding: 30px 10px;
+  margin: 0 auto 0;
+  color: white;
+  text-align: center;
 }
 
 /* responsive */
