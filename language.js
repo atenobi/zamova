@@ -20,7 +20,12 @@ const textOnPage = [
     key: "BY",
     headerTxt:
       '"Замо́ва" — старажытны жанр народнай паэзіі, слоўная формула, якой надавалася магічнае значэньне.',
-    contentTxt: `«Не забывайце ж мовы нашай роднай, каб не умёрлі». Францішак Багушэвіч, славуты беларускі паэт.`,
+    contentTxt: `
+      «Не забывайце ж
+      мовы нашай роднай,
+      каб не умёрлі». 
+
+      Францішак Багушэвіч.`,
     wordsTxt: `Дрэва без каранёў не бывае. Ёсць свае карані і ў
       кожнага з нас. I ўваходзяць яны ў глыбіню стагоддзяў.
       Праўда, не заўсёды лёгка іх адшукаць, дакапацца да іх. Не
@@ -73,8 +78,10 @@ const textOnPage = [
     titleTxt: "Tэкст выкарыстаны у спектаклі",
     songsTxt: `Песні`,
     zamovaTitle: `Замова`,
-    zamovaTxt: `(Супраць ліхога вока) 
-      Госпадзі, баславі, Госпадзі, пасабі! 
+    zamovaTxt: `
+      (Супраць ліхога вока) 
+      Госпадзі, баславі, 
+      Госпадзі, пасабі! 
       Ад прысух, ад нетух, 
       Ад урокаў, ад парокаў, 
       І дзвенаццаці цароў, 
@@ -94,65 +101,119 @@ const textOnPage = [
       І ад перважонца, 
       І ад другажонца, 
       І ад чорнага глаза, 
-      І ад чорнага, падзадорнага, 
+      І ад чорнага, 
+      падзадорнага, 
       І з боку сматрашчага, 
       З боку захадзяшчага. 
-      Вам тут не быць, не жыць, 
+      Вам тут не быць, 
+      не жыць, 
       Прыткі прыстаўкі! 
-      Ідзіце вы на мхі, на балота, 
+      Ідзіце вы на мхі, 
+      на балота, 
       На гнілыя калода, 
       На леса дрэмучыя, 
       На места тапучыя, 
       Там ваш род-племені, 
       Явства сахарныя, 
-      А рабу Івану добрага здароўя`,
-    behindFog: `За туманам Нічаго не відна...
-      Толькі відна Дуба зелянога.
-      Пад тым дубам Крыніца стаяла.
-      З той крыніцы Дзеўка ваду брала.
-      Абараніла Залатое калечка.
-      "А хто ж тое Калечка дастане,
-      Той са мною На рушнічак стане."
-      Адазваўся Хлопец маладзенькі:
-      "А я ж тваё Калечка дастану,
-      Я ж з табою На рушнічак стану!"
-      "Лепей буду Палын горкі есці, 
-      Чым з табою За столікам сесці!"`,
-    pine: `Зашумела сасоначка Над усходам сонца.
-      Заплакала дзяўчынанька, Гледзячы ў аконца.
-      "А мая ж ты, матуленька! Чаму не будзіла,
-      Як першая кампанячка У войска вырушыла?"
-      "А мая ж ты, дачушанька! Таму не будзіла,
-      Што твой мілы ўпярод пайшоў, Каб ты не тужыла"
-      "А мая ж ты, матуленька! Не тужу, не плачу,
-      Толькі выйду на вулачку - Сцежачкі не бачу!"
-      "А мая ж ты матуленька! Купі ты мне шоўку-
-      Буду шыць і вышываці Міламу кашульку."
-      Шыла-шыла, вышывала-Не хваціла шоўку.
-      Любілася - кахалася, Да не знала толку.`,
-    cherry: `Зялёная вішня З-пад кораня выйшла.
-      Аддала ж  мяне маці Дзе я непрывычна.
-      Як выйду на гору Ды  крыкну дадому:
-      "Вары, маці, вячэру Шчэ і на маю долю!"
-      "Ты думаеш, мама. Што я тут не плачу -
-      За горкімі слязамі Я свету не бачу.
-      Ты думаеш, мама, Што я тут раюю-
-      Прыдзі, падзівіся, Як я тут гарую.
-      Успамяні ж мяне, мама, Хоць раз у суботу,
-      Як я успамінаю, Ідучы на работу.
-      Успамяні ж мяне, мама, Хоць раз у нядзелю,
-      Як я успамінаю Сцелючы пасцелю.
-      Успамяні ж мяне, мама, Хоць раз у аўторак,
-      Як я успамінаю на дзень Разоў сорак."`,
-    river: ` Ішоў міленькі лужочкам, А я млада беражком.
-      Махнуў міленькі платочкам, А я праваю рукой.
-      Чэраз рэчку падай ручку, Чэраз быструю раку.
-      Гэта рэчачка шырока, Да крутыя берага.
-      Гэта рэчка рассярчала, Як ударыла вална,
-      Як ударыла вална Да ў крутыя берага.
-      Наступае маё ўрэмя Усё халодная зіма,
-      Нету следу на дарожцы, Майго мілага няма.`,
-    rose: ` А ў садзе ружа, Мілы мой Божа -
+      А рабу Івану 
+      добрага здароўя`,
+    behindFog: `
+      За туманам Нічаго не відна...
+      Толькі відна 
+      Дуба зелянога.
+      Пад тым дубам 
+      Крыніца стаяла.
+      З той крыніцы 
+      Дзеўка ваду брала.
+      Абараніла 
+      Залатое калечка.
+      "А хто ж тое 
+      Калечка дастане,
+      Той са мною 
+      На рушнічак стане."
+      Адазваўся 
+      Хлопец маладзенькі:
+      "А я ж тваё 
+      Калечка дастану,
+      Я ж з табою 
+      На рушнічак стану!"
+      "Лепей буду 
+      Палын горкі есці, 
+      Чым з табою 
+      За столікам сесці!"`,
+    pine: `
+      Зашумела сасоначка 
+      Над усходам сонца.
+      Заплакала дзяўчынанька, 
+      Гледзячы ў аконца.
+      "А мая ж ты, матуленька! 
+      Чаму не будзіла,
+      Як першая кампанячка 
+      У войска вырушыла?"
+      "А мая ж ты, дачушанька! 
+      Таму не будзіла,
+      Што твой мілы ўпярод пайшоў, 
+      Каб ты не тужыла"
+      "А мая ж ты, матуленька! 
+      Не тужу, не плачу,
+      Толькі выйду на вулачку - 
+      Сцежачкі не бачу!"
+      "А мая ж ты матуленька! 
+      Купі ты мне шоўку-
+      Буду шыць і вышываці 
+      Міламу кашульку."
+      Шыла-шыла, вышывала-
+      Не хваціла шоўку.
+      Любілася - кахалася, 
+      Да не знала толку.`,
+    cherry: `
+      Зялёная вішня 
+      З-пад кораня выйшла.
+      Аддала ж  мяне маці 
+      Дзе я непрывычна.
+      Як выйду на гору 
+      Ды  крыкну дадому:
+      "Вары, маці, вячэру 
+      Шчэ і на маю долю!"
+      "Ты думаеш, мама. 
+      Што я тут не плачу -
+      За горкімі слязамі 
+      Я свету не бачу.
+      Ты думаеш, мама, 
+      Што я тут раюю-
+      Прыдзі, падзівіся, 
+      Як я тут гарую.
+      Успамяні ж мяне, мама, 
+      Хоць раз у суботу,
+      Як я успамінаю, 
+      Ідучы на работу.
+      Успамяні ж мяне, мама, 
+      Хоць раз у нядзелю,
+      Як я успамінаю 
+      Сцелючы пасцелю.
+      Успамяні ж мяне, мама, 
+      Хоць раз у аўторак,
+      Як я успамінаю 
+      на дзень Разоў сорак."`,
+    river: ` 
+      Ішоў міленькі лужочкам, 
+      А я млада беражком.
+      Махнуў міленькі платочкам, 
+      А я праваю рукой.
+      Чэраз рэчку падай ручку, 
+      Чэраз быструю раку.
+      Гэта рэчачка шырока, 
+      Да крутыя берага.
+      Гэта рэчка рассярчала, 
+      Як ударыла вална,
+      Як ударыла вална 
+      Да ў крутыя берага.
+      Наступае маё ўрэмя 
+      Усё халодная зіма,
+      Нету следу на дарожцы, 
+      Майго мілага няма.`,
+    rose: ` 
+      А ў садзе ружа, Мілы мой Божа -
       Несчасна мая Доль.
       Не порадзіны, Не колядзіны -
       Не родныя Мамкі. 
@@ -184,7 +245,8 @@ const textOnPage = [
       Мала служылі Вы ў мяне!
       Ой, больш служыць Не будзеце!
       Пад белы вялён (вэлюм) Пойдзеце!"`,
-    moose: ` Ой злавілі Ды сівогога лося У гаросе.
+    moose: ` 
+      Ой злавілі Ды сівогога лося У гаросе.
       Як і пачула Яно старая ласіца У лузе.
       Як і кінула Крутыя рогі Пад ногі.
       "Няхай мае Крутыя рогі Прападуць!
@@ -194,7 +256,13 @@ const textOnPage = [
     key: "PL",
     headerTxt:
       '"Zamova" to starożytny gatunek poezji ludowej, formuła słowna, której nadano magiczne znaczenie.',
-    contentTxt: `„Nie zapominaj o naszych językach ojczystych, aby nie umarły”. Francishak Bagushevich, słynny białoruski poeta.`,
+    contentTxt: `„Nie zapominaj
+      o naszych językach
+      ojczystych,
+      aby nie umarły”.
+
+      Francishak Bagushevich,
+      słynny białoruski poeta.`,
     wordsTxt: `Nie ma drzewa bez korzeni. Ma swoje korzenie w
       każdy z nas. I wchodzą w głąb wieków.
       Jednak nie zawsze jest łatwo je znaleźć, dotrzeć do nich. Nie
@@ -244,8 +312,10 @@ const textOnPage = [
       przynajmniej o twojej rodzinie, twoich przodkach?`,
     titleTxt: "Tekst użyty w sztuce",
     zamovaTitle: `Zaklęcie`,
-    zamovaTxt: `(Przeciw złego oka)
-      Panie, błogosław, Panie, pomóż!
+    zamovaTxt: `
+      (Przeciw złego oka)
+      Panie, błogosław, 
+      Panie, pomóż!
       Od susz, od susz,
       Z lekcji, z wad,
       A dwunastu królów
@@ -259,7 +329,8 @@ const textOnPage = [
       Lub na kontrowersyjne?
       Albo bzdury?
       Od czerwonych dziewczyn
-      Od odnoszących sukcesy młodych kobiet,
+      Od odnoszących sukcesy 
+      młodych kobiet,
       Od starych ludzi,
       Od młodych ludzi,
       I od początku
@@ -268,105 +339,187 @@ const textOnPage = [
       I z czerni, ognisty,
       A od strony widza
       Od strony zachodniej.
-      Nie powinieneś tu być, nie żyj,
+      Nie powinieneś tu być, 
+      nie żyj,
       Dołączone prefiksy!
-      Czy idziesz do mchu, na bagno,
+      Czy idziesz do mchu, 
+      na bagno,
       Na zgniłych kłodach,
       Drzemię w lesie,
       Zamiast deptać,
       Oto twoi krewni,
       Zjawisko cukru,
-      I dobre zdrowie dla mojego sługi Iwana`,
+      I dobre zdrowie 
+      dla mojego sługi Iwana`,
     songsTxt: `Piosenki`,
-    behindFog: ` Za mgłą Nie widzę nic...
-      Tylko widoczne Zielony dąb.
-      Pod tym dębem Strumień płynął.
-      Z tego strumienia Dziewczyna wzięła wodę.
-      Upuszczony Złoty pierścionek.
-      "A kto to jest? Pierścień dostanie
-      Ten ze mną Stanie się ręcznikiem. 
-      odpowiedział Młody chłopak:
-      "Jestem twój dostanę pierścionek
-      jestem z tobą Stanę na ręczniku!"
-      "Wolałbym Piołun jest zjadany
-      A ty Usiądź przy stole!”`,
-    pine: `Sosna wydała dźwięk Nad wschodem słońca.
-      Dziewczyna płakała Patrząc przez okno.
-      „A ty jesteś moja, mamo! Dla czego się nie obudziłeś
-      Jako pierwsza Grupa ludzi Czy wstąpiłeś do armii?
-      "A ty jesteś moja, mała dziewczynko! Dla tego się nie obudziłem
-      Że twoja ukochana odeszła Abyś nie tęsknił"
-      „A ty jesteś moja, mamo! Nie tęsknię, nie płaczę
-      Po prostu wyjdę na ulicę - Nie widzę ścieżki!”
-      „A ty jesteś moją matką! kup mi jedwab-
-      Uszyję i wyszyję Urocza koszula."
-      Szyte, szyte, haftowane - Zabrakło jedwabiu.
-      Kochany - kochany Nie wiedziałem, o co chodzi.`,
-    cherry: `Spod korzenia wyszła zielona wiśnia.
-      Moja mama dała mi miejsce, do którego nie jestem przyzwyczajony.
-      Gdy wejdę na górę, krzyknę do domu:
-      "Gotuj, mamo, obiad dla mnie też!"
-      "Myślisz, mamo. Że tu nie płaczę -
-      Za gorzkimi łzami nie widzę świata.
-      Czy myślisz, mamo, co tutaj polecam-
+    behindFog: ` 
+      Za mgłą Nie widzę nic...
+      Tylko widoczne 
+      Zielony dąb.
+      Pod tym dębem
+      Strumień płynął.
+      Z tego strumienia 
+      Dziewczyna wzięła wodę.
+      Upuszczony 
+      Złoty pierścionek.
+      "A kto to jest? 
+      Pierścień dostanie
+      Ten ze mną 
+      Stanie się ręcznikiem. 
+      odpowiedział 
+      Młody chłopak:
+      "Jestem twój 
+      dostanę pierścionek
+      jestem z tobą 
+      Stanę na ręczniku!"
+      "Wolałbym 
+      Piołun jest zjadany
+      A ty Usiądź 
+      przy stole!”`,
+    pine: `
+      Sosna wydała dźwięk 
+      Nad wschodem słońca.
+      Dziewczyna płakała 
+      Patrząc przez okno.
+      „A ty jesteś moja, mamo! 
+      Dla czego się nie obudziłeś
+      Jako pierwsza Grupa ludzi 
+      Czy wstąpiłeś do armii?
+      "A ty jesteś moja, 
+      mała dziewczynko! 
+      Dla tego się nie obudziłem
+      Że twoja ukochana odeszła 
+      Abyś nie tęsknił"
+      „A ty jesteś moja, mamo! 
+      Nie tęsknię, nie płaczę
+      Po prostu wyjdę na ulicę - 
+      Nie widzę ścieżki!”
+      „A ty jesteś moją matką! 
+      kup mi jedwab-
+      Uszyję i wyszyję 
+      Urocza koszula."
+      Szyte, szyte, haftowane - 
+      Zabrakło jedwabiu.
+      Kochany - kochany 
+      Nie wiedziałem, o co chodzi.`,
+    cherry: `
+      Spod korzenia wyszła 
+      zielona wiśnia.
+      Moja mama dała mi miejsce, 
+      do którego nie 
+      jestem przyzwyczajony.
+      Gdy wejdę na górę, 
+      krzyknę do domu:
+      "Gotuj, mamo, 
+      obiad dla mnie też!"
+      "Myślisz, mamo. 
+      Że tu nie płaczę -
+      Za gorzkimi łzami 
+      nie widzę świata.
+      Czy myślisz, mamo, 
+      co tutaj polecam-
       Chodź, zobacz jak tu płonę.
-      Zapamiętaj mnie mamo, przynajmniej raz w sobotę,
+      Zapamiętaj mnie mamo, 
+      przynajmniej raz w sobotę,
       Jak pamiętam do pracy.
-      Zapamiętaj mnie mamo, przynajmniej raz w niedzielę,
+      Zapamiętaj mnie mamo, 
+      przynajmniej raz w niedzielę,
       Jak pamiętam leżałem w łóżku.
-      Zapamiętaj mnie mamo, chociaż raz we wtorek,
-      Jak pamiętam w dniu czterdziestu czasów”.`,
-    river: `Urocza spacerowała po trawniku, a ja byłam młoda na brzegu.
-      Pomachał mi uroczą chusteczką, a ja prawą ręką.
-      Przełóż pióro przez rzekę, przez wartką rzekę.
-      Ta rzeka jest szeroka, o stromych brzegach.
-      Ta rzeka wezbrała, jak uderzenie fali,
-      Jak fala Ka uderzyła w strome brzegi.
-      Mój czas nadchodzi Cała mroźna zima
-      Nie ma śladu na ścieżce, Moja ukochana odeszła.`,
-    rose: `A w ogrodzie jest róża, mój drogi Boże -
+      Zapamiętaj mnie mamo, 
+      chociaż raz we wtorek,
+      Jak pamiętam w dniu 
+      czterdziestu czasów”.`,
+    river: `
+      Urocza spacerowała po trawniku,
+       a ja byłam młoda na brzegu.
+      Pomachał mi uroczą chusteczką,
+       a ja prawą ręką.
+      Przełóż pióro przez rzekę,
+       przez wartką rzekę.
+      Ta rzeka jest szeroka,
+       o stromych brzegach.
+      Ta rzeka wezbrała,
+       jak uderzenie fali,
+      Jak fala Ka uderzyła
+       w strome brzegi.
+      Mój czas nadchodzi
+       Cała mroźna zima
+      Nie ma śladu na ścieżce,
+       Moja ukochana odeszła.`,
+    rose: `
+      A w ogrodzie jest róża,
+      mój drogi Boże -
       Mój los jest niefortunny.
-      Nie rodziny, nie Boże Narodzenie -
+      Nie rodziny,
+      nie Boże Narodzenie -
       Nie rodzima mama.
-      Wysłałbym czarny znacznik wyboru
+      Wysłałbym czarny
+      znacznik wyboru
       Na tamten świat, mamo.
-      Sakolinachku na Ukrainiechku
+      Sakolinachku
+      na Ukrainiechku
       Do mojej ojczyzny.
       Sokół leci, nie lata
-      Mamusia czekała bardzo długo.
+      Mamusia czekała
+       bardzo długo.
       "Och, chciałbym móc wstać,
-      Moje dzieci - Rozkaz przyniesienia.
-      Ponieważ mokra ziemia leżała na piersi -
+      Moje dzieci - 
+      Rozkaz przyniesienia.
+      Ponieważ mokra 
+      ziemia leżała na piersi -
       Nie mogę wstać.
-      Deski sosnowe Ściśnięte nogi -
+      Deski sosnowe 
+      Ściśnięte nogi -
       Nie mogę iść, Idź."`,
-    firePine: `Ach, wiosna! Och, jest czerwony!
+    firePine: `
+      Ach, wiosna! 
+      Och, jest czerwony!
       A co nam przyniosłeś?
       Sprężynowiec gadułą,
-      Wrona rechocze - Ser chce! ser chce
-      Dziewczyna płacze - chce wyjść za mąż!
-      Nie przestawaj, wrona - przestaniesz!
-      Nie płacz dziewczyno - będziesz płakać!
-      Kruk kruk, po zjedzeniu sera,
+      Wrona rechocze - 
+      Ser chce! ser chce
+      Dziewczyna płacze - 
+      chce wyjść za mąż!
+      Nie przestawaj, 
+      wrona - przestaniesz!
+      Nie płacz dziewczyno - 
+      będziesz płakać!
+      Kruk kruk, 
+      po zjedzeniu sera,
       Dziewczynka płacze z synem.
       Sosna płonęła, Palala.
       Pod nią stała dziewczyna.
       Rosyjski warkocz Chasali.
-      „Och, warkocze, warkocze, jesteś mój!
+      „Och, warkocze, 
+      warkocze, jesteś mój!
       Trochę mi służyłeś!
-      Och, już nie będziesz służyć!
-      Pod białą zasłoną (welon) Idź!"`,
-    moose: `Och, złapali szarego łosia w lesie.
-      Jak stara łasica usłyszała to na łące.
-      Gdy rzuciła strome rogi pod jej stopy.
-      „Niech moje fajne rogi znikną!
-      Dokąd zabiorą mojego szarego łosia?`,
+      Och, już nie 
+      będziesz służyć!
+      Pod białą zasłoną
+      (welon) Idź!"`,
+    moose: `
+      Och, złapali szarego
+      łosia w lesie.
+      Jak stara łasica 
+      usłyszała to na łące.
+      Gdy rzuciła strome 
+      rogi pod jej stopy.
+      „Niech moje fajne
+      rogi znikną!
+      Dokąd zabiorą mojego
+      szarego łosia?`,
   },
   {
     key: "EN",
     headerTxt:
       '"Zamova" is an ancient genre of folk poetry, a verbal formula that was given a magical meaning.',
-    contentTxt: `"Don't forget our native languages ​​so they don't die." Francishak Bagushevich, a famous Belarusian poet.`,
+    contentTxt: `
+    "Don't forget 
+    our native languages
+     ​​so they don't die."
+
+    Francishak Bagushevich,
+    a famous Belarusian poet.`,
     wordsTxt: `There is no tree without roots. It has its roots in
       each of us. And they enter the depths of centuries.
       However, it is not always easy to find them, to get to them. No
@@ -415,10 +568,14 @@ const textOnPage = [
       at least about your family, your ancestors?...`,
     titleTxt: "Text used in the play",
     zamovaTitle: `Spell`,
-    zamovaTxt: `(Against the evil eye)
-      Lord, bless, Lord, help!
-      From droughts, from droughts,
-      From lessons, from vices,
+    zamovaTxt: `
+      (Against the evil eye)
+      Lord, bless, 
+      Lord, help!
+      From droughts, 
+      from droughts,
+      From lessons, 
+      from vices,
       And the twelve kings
       And the twelve kings
       And twelve dry,
@@ -430,108 +587,228 @@ const textOnPage = [
       Or on the controversial?
       Or on nonsense?
       From red girls
-      From successful young women,
+      From successful 
+      young women,
       From old men,
       From young people,
       And from the beginning,
       And from the second spouse,
       And from the black eye,
       And from black, fiery,
-      And from the side of the viewer,
+      And from the side 
+      of the viewer,
       From the western side.
-      You should not be here, do not live,
+      You should
+      not be here, 
+      do not live,
       Attached prefixes!
-      Do you go to the moss, to the swamp,
+      Do you go 
+      to the moss, 
+      to the swamp,
       On rotten logs,
       Dozing in the forest,
       Instead of trampling,
       There is your kindred,
       The phenomenon of sugar,
-      And good health to my servant Ivan`,
-    songsTxt: `Piosenki`,
-    behindFog: `Behind the fog Everithing is hidden...
-      only green oak is visible.
-      a stream flows under this oak.
-      From this steam the girl take water.
-      she drop on the steam her golden ring.
-      "And who can find this ring,
+      And good health 
+      to my servant Ivan`,
+    songsTxt: `Songs`,
+    behindFog: `
+      Behind the fog 
+      Everithing is hidden...
+      only green oak 
+      is visible.
+      a stream flows 
+      under this oak.
+      From this steam 
+      the girl take water.
+      she drop on the steam 
+      her golden ring.
+      "And who can 
+      find this ring,
       that person stand with me
       on a towel."
       Yang men answered:
-      "I will find your ring. I will stand with you on a towel!"
-      "It's better to eat bitter sagebrush, 
-      than sit with you at the table!"`,
-    pine: `The pine tree made a noiseAbove the sunrise.
-      The girl cried Looking out the window.
-      "And you are mine, mother! Why didn't you wake up
-      As the first company Did you join the army?"
-      "And you are mine, little girl! That's why I didn't wake up
-      That your sweetheart has gone So that you don't miss"
-      "And you are mine, mother! I don't miss, I don't cry
-      I'll just go out into the street - I can't see the path!"
-      "And you are my mother! buy me silk-
-      I will sew and embroider Sweet shirt."
-      Sewed, sewed, embroidered-There was not enough silk.
-      Loved - loved I didn't know the point.`,
-    cherry: `A green cherry came out from under the root.
-      My mother gave me where I am not used to.
-      As I climb the mountain, I will shout home:
-      "Cook, mother, dinner for me too!"
-      "You think, mom. That I'm not crying here -
-      Behind the bitter tears I do not see the world.
-      Do you think, mom, What am I recommending here-
-      Come, see how I burn here.
-      Remember me, mother, At least once on Saturday,
-      As I remember, going to work.
-      Remember me, mom, At least once on Sunday,
-      As I remember, I was lying in bed.
-      Remember me, mom, even once on Tuesday,
-      As I remember on the day of the Forty Times."`,
-    river: `The cute one was walking along the lawn, and I was young along the shore.
-      He waved a cute handkerchief, and I waved my right hand.
-      Pass the pen across the river, Across the swift river.
-      This river is wide, with steep banks.
-      This river swelled, Like a wave hit,
-      How the wave Ka hit the steep shores.
-      My time is coming All the cold winter
-      There is no trace on the path, My darling is gone.`,
-    rose: `And there is a rose in the garden, my dear God -
+      "I will find your ring. 
+      I will stand 
+      with you on a towel!"
+      "It's better 
+      to eat bitter sagebrush, 
+      than sit with 
+      you at the table!"`,
+    pine: `
+      The pine tree made 
+      a noise
+      Above the sunrise.
+      The girl cried 
+      Looking out the window.
+      "And you are mine, mother! 
+      Why didn't you wake up
+      As the first company 
+      Did you join the army?"
+      "And you are mine, 
+      little girl! 
+      That's why 
+      I didn't wake up
+      That your sweetheart has gone 
+      So that you don't miss"
+      "And you are mine, mother! 
+      I don't miss, 
+      I don't cry
+      I'll just go out 
+      into the street - 
+      I can't see the path!"
+      "And you are my mother! 
+      buy me silk-
+      I will sew 
+      and embroider 
+      Sweet shirt."
+      Sewed, sewed, 
+      embroidered-
+      There was 
+      not enough silk.
+      Loved - loved 
+      I didn't know the point.`,
+    cherry: `
+      A green cherry 
+      came out from 
+      under the root.
+      My mother 
+      gave me where 
+      I am not used to.
+      As I climb 
+      the mountain, 
+      I will shout home:
+      "Cook, mother, 
+      dinner for me too!"
+      "You think, mom. 
+      That I'm not 
+      crying here -
+      Behind the bitter tears 
+      I do not see 
+      the world.
+      Do you think, 
+      mom,
+      What am I recommending here-
+      Come, see how 
+      I burn here.
+      Remember me, 
+      mother, 
+      At least once 
+      on Saturday,
+      As I remember, 
+      going to work.
+      Remember me, 
+      mom, 
+      At least once 
+      on Sunday,
+      As I remember, 
+      I was lying in bed.
+      Remember me, 
+      mom, 
+      even once on Tuesday,
+      As I remember 
+      on the day 
+      of the Forty Times."`,
+    river: `
+      The cute one was 
+      walking along the lawn, 
+      and I was young 
+      along the shore.
+      He waved a cute handkerchief, 
+      and I waved 
+      my right hand.
+      Pass the pen 
+      across the river, 
+      Across the swift river.
+      This river is wide,
+       with steep banks.
+      This river swelled,
+      Like a wave hit,
+      How the wave 
+      Ka hit the 
+      steep shores.
+      My time is coming 
+      All the cold winter
+      There is no trace 
+      on the path,
+      My darling is gone.`,
+    rose: `
+      And there is 
+      a rose in the garden, 
+      my dear God -
       My fate is unfortunate.
-      Not families, not Christmas -
+      Not families, 
+      not Christmas -
       Not native Mom.
-      I would send a black check mark
-      To the other world, Mom.
-      Sakolinachku On Ukrainachku
+      I would send 
+      a black check mark
+      To the other world, 
+      Mom.
+      Sakolinachku 
+      On Ukrainachku
       To my homeland.
-      The falcon flies. It does not fly
-      Mommy has been waiting for a long time.
-      "Oh, I wish I could get up,
-      My children - The order to bring.
-      Because the wet earth lay on the chest -
+      The falcon flies. 
+      It does not fly
+      Mommy has been 
+      waiting for a long time.
+      "Oh, I wish
+      I could get up,
+      My children - 
+      The order to bring.
+      Because the wet 
+      earth lay on the chest -
       I can not get up.
-      Pine boards Squeezed the legs -
+      Pine boards 
+      Squeezed the legs -
       I can't go, Go."`,
-    firePine: `Ah, spring! Oh, it's red!
+    firePine: `
+      Ah, spring! 
+      Oh, it's red!
       And what did you bring us?
       Spring-eared chatterbox,
-      Crow croaks - Cheese wants! cheese wants
-      The girl is crying - She wants to get married!
-      Don't stop, crow - you will stop!
-      Don't cry, girl - You'll cry!
-      The raven raven, having eaten the cheese,
-      A girl is crying with her son.
-      The pine was burning, Palala.
-      A girl was standing under her.
+      Crow croaks - 
+      Cheese wants! 
+      cheese wants
+      The girl is crying - 
+      She wants 
+      to get married!
+      Don't stop, crow - 
+      you will stop!
+      Don't cry, girl - 
+      You'll cry!
+      The raven raven,
+      having eaten the cheese,
+      A girl is crying 
+      with her son.
+      The pine was burning, 
+      Palala.
+      A girl was standing 
+      under her.
       Chasala's Russian braid.
-      "Oh, braids, braids, you are mine!
+      "Oh, braids, 
+      braids, you are mine!
       You served me a little!
-      Oh, you won't serve anymore!
-      Under the white veil (veil) Go!"`,
-    moose: `Oh, they caught a gray moose in the forest.
-      As the old weasel heard it in the meadow.
-      As she threw the steep horns Under her feet.
-      "Let my Cool Horns Be Vanished!
-      Where will they take my gray elk?"`,
+      Oh, you won't 
+      serve anymore!
+      Under the white 
+      veil (veil) Go!"`,
+    moose: `
+      Oh, they caught 
+      a gray moose 
+      in the forest.
+      As the old weasel 
+      heard it 
+      in the meadow.
+      As she threw 
+      the steep horns 
+      Under her feet.
+      "Let my Cool 
+      Horns 
+      Be Vanished!
+      Where will 
+      they take
+      my gray elk?"`,
   },
 ];
 
